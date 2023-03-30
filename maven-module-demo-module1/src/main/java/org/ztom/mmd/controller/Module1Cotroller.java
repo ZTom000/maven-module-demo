@@ -15,7 +15,7 @@ import org.ztom.mmd.common.entity.Result;
 @RestController
 public class Module1Cotroller {
 
-    @GetMapping("module1/test/{val}")
+    @GetMapping("/module1/test/{val}")
     public Result test(@PathVariable(value = "val", required = false) String val) {
         return Result.success(val);
     }
